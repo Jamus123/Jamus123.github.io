@@ -1,8 +1,336 @@
-<!DOCTYPE html>
-<html>
-<head></head>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>James Collins Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
 <body>
-	<h1>Hello world!</h1>
-	<p></p>
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper" class="">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand hidden-xs hidden-sm">
+                <a href="#top" onclick="$" (="" "#menu-close").click();="">James Collins</a>
+            </li>
+            <li class="sidebar-brand hidden-md hidden-lg">
+                <a href="#top_xs" onclick="$" (="" "#menu-close").click();="">James Collins</a>
+            </li>
+            <li class="hidden-xs hidden-sm">
+                <a href="#top" onclick="$" (="" "#menu-close").click();="">Home</a>
+            </li>
+            <li class="hidden-md hidden-lg">
+                <a href="#top_xs" onclick="$" (="" "#menu-close").click();="">Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick="$" (="" "#menu-close").click();="">About</a>
+            </li>
+            <li>
+                <a href="#services" onclick="$" (="" "#menu-close").click();="">Skills</a>
+            </li>
+            <li class="hidden-xs hidden-sm">
+                <a href="#final" onclick="$" (="" "#menu-close").click();="">Final Project</a>
+            </li>
+            <li class="hidden-md hidden-lg">
+                <a href="#final_xs" onclick="$" (="" "#menu-close").click();="">Final Project</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick="$" (="" "#menu-close").click();=""> Projects</a>
+            </li>
+            <!--             <li>
+                <a href="#contact" onclick="$" (="" "#menu-close").click();="">Contact</a>
+            </li> -->
+        </ul>
+    </nav>
+    <!-- Header -->
+    <header id="top" class="header hidden-xs hidden-sm">
+        <div class="text-vertical-center">
+            <h1>James Collins</h1>
+            <h3>Full Stack Web Developer</h3>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">Discover More</a>
+        </div>
+    </header>
+    <header id="top_xs" class="header_xs hidden-md hidden-lg">
+        <div class="text-vertical-center">
+            <h1>James Collins</h1>
+            <h3>Full Stack Web Developer</h3>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">Discover More</a>
+        </div>
+    </header>
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>
+                    My name is James Collins, I am a Web Developer in Southern California, but have no problems traveling for work. I have been programming for about a year now, but have more recently begun my career in web development. I attended a web development school called LearningFuze in order to get a boost into the industry. There I learned web page structure and design with HTML5 and CSS. I learned the powerful scripting language that is Javascript and am continuing to delve into its intricacies with Node.js and various JS frameworks.</h2>
+                    <a onclick="show()" id="more" class="btn btn-dark">Stuff I enjoy</a>
+                    <h2 id="extra" class="hide"> I am a huge fan of music. I play the drums and some piano, I would probably say I enjoy listening more than playing though. I also love to cook, I worked in the front-of-the-house in many restaurants for almost 10 years and always wished I had took the plunge and joined the cooks. I'm an avid spearfisher, having done mostly shore diving. I absolutely love the ocean. I've been playing video games my whole and hope that my programming experience will eventually move into that realm where I can finally make some of the games I've dreamed of.</h2>
+                    <a onclick="hide()" id="more2" class="hide btn btn-dark">Work stuff</a>
+                    <p class="lead">Check me out the web with these links</p>
+                    <p class="lead">
+                        <span></span><a target="_blank" href="https://www.linkedin.com/in/jcollins7">LinkedIn</a>
+                        <span> | </span>
+                        <span></span><a target="_blank" href="https://www.github.com/Jamus123">Github</a></p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services skill_bg">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Skills and Tech</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-code fa-stack-1x maroon_font"></i>
+                            </span>
+                                <h4>
+                                    <strong>Javascript</strong>
+                                </h4>
+                                <p>I have focused most of time in web development learning Javascript. From closures to IIFEs to prototypal inheritance -- I'm learning to grasp all the important and neccessary aspects of javascript</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-css3 fa-stack-1x maroon_font"></i>
+                            </span>
+                                <h4>
+                                    <strong>CSS3 and Bootstrap</strong>
+                                </h4>
+                                <p>I have used CSS and Bootstrap to create mobile responsive websites that look great and perform well on phones, tablets and personal computers.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github-alt fa-stack-1x maroon_font"></i>
+                            </span>
+                                <h4>
+                                    <strong>Git Version Control</strong>
+                                </h4>
+                                <p>I have worked on multiple group projects where my team utilized Github for version control. I commit frequently to projects I work on. I can rebase, manual merge and manage pull requests. Github is a tool I gladly use.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-cube fa-stack-1x maroon_font"></i>
+                            </span>
+                                <h4>
+                                    <strong>Jquery</strong>
+                                </h4>
+                                <p>I have experience with jQuery for quick and easy DOM manipulation and AJAX requests. I am also familiar with promises in order to write clean code that is readable for other teammembers</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-terminal fa-stack-1x maroon_font"></i>
+                            </span>
+                                <h4>
+                                    <strong>Frameworks and Modules</strong>
+                                </h4>
+                                <p>I use Express for handling Node.js HTTP requests. I am familiar with NPM and many of its modules as a way to quickly deploy server-side functionality. I also have some templating experience using Jade and Angular.js</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-database fa-stack-1x maroon_font"></i>
+                            </span>
+                                <h4>
+                                    <strong>Back-end Development</strong>
+                                </h4>
+                                <p>Because of my focus on Javascript I have been using Node.js for server programming. I also have experience with SQL for more traditional database development but have also used MongoDB for lightweight document/JSON based databases.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- Callout -->
+    <aside id="final" class="callout hidden-xs hidden-sm">
+        <div class="text-vertical-center">
+            <h1><a id="link1" target="_blank" class="ylw_font" href="https://github.com/Jamus123/c4_final_project">Toon</a></h1>
+            <h4 class="col-md-10 col-md-offset-1">This is a local music sharing application that I am working on that uses Spotify and Google Maps API's to extend that capabilites of Spotify's music streaming service.</h4>
+        </div>
+    </aside>
+    <aside id="final_xs" class="callout_xs hidden-md hidden-lg ">
+        <div class="text-vertical-center">
+            <h1><a id="link1" class="ylw_font" href="https://github.com/Jamus123/c4_final_project">Toon</a></h1>
+            <h4>Click on the link above to view my project</h4>
+        </div>
+    </aside>
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio skill_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>My Projects</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="portfolio-item">
+                                <h3>To Do List</h3>
+                                <p>This program was a to-do list created as a Chrome Extension where I managed a team's code repository handling manual merges, pull requests, Github issues and making sure that my team and their code was synchronized.
+                                </p>
+                                <a href="https://github.com/Jamus123/c4_TDL">
+                                    <p>View on Github</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="portfolio-item">
+                                <h3>Sweet Corner</h3>
+                                <p>Sweet Corner was a mock cupcake website that allowed us to practice responsize design, allowing our webpage to viewed equally as effective on phones, tablets, laptops and desktops</p>
+                                <a href="https://github.com/Jamus123/sweet-corner">
+                                    <p>View on Github</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="portfolio-item">
+                                <h3>Student Grade Table</h3>
+                                <p>A program for teachers to manage the grades of a class that also allows them to be sorted and highlights good and bad grades</p>
+                                <a href="https://github.com/Jamus123/Student-Grade-Table">
+                                    <p>View on Github</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="portfolio-item">
+                                <h3>Node Projects</h3>
+                                <p>This is 10 projects I'm doing in Node.js. It makes heavy use of NPM in order to quickly write useful applications and features on the server-side.</p>
+                                <a href="https://github.com/Jamus123/10Projects">
+                                    <p>View on Github</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.col-lg-10 -->
+        <!-- /.row -->
+        <!-- /.container -->
+    </section>
+    <!-- Call to Action CURRENTLY NOT IMPLEMENTED
+    <aside id="contact" class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>Contact Information</h3>
+                    <form action="" method="POST">
+                        <label class="col-xs-4 col-md-2 col-md-offset-3">Name:</label>
+                        <input class="col-xs-7 col-md-4" type="text" placeholder="name" name="name" required="">
+                        <label class="col-xs-4 col-md-2 col-md-offset-3">E-mail:</label>
+                        <input class="col-xs-7 col-md-4" type="email" placeholder="email" name="email" required="">
+                        <label class="col-xs-4 col-md-2 col-md-offset-3">Phone:</label>
+                        <input class="col-xs-7 col-md-4" type="phone" placeholder="phone number" name="phone" required="">
+                        <label class="col-xs-4 col-md-2 col-md-offset-3">Message:</label>
+                        <textarea class="col-xs-7 col-md-4" cols="20" rows="3" placeholder="Message" name="message" required=""></textarea>
+                        <button class="send col-xs-4 col-xs-offset-7 col-md-2 col-md-offset-7">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </aside> -->
+    <!-- Footer -->
+    <footer class="footerbg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Here's my Resume...Take a look</strong>
+                    </h4>
+                    <h3><a target="_blank" class="resume btn btn-dark btn-lg" href="Resume.pdf">Resume</a></h3>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    function show() {
+        $('.hide').removeClass('hide');
+        $('#more2').removeClass('hide');
+        $('#more').addClass('hide');
+    }
+
+    function hide() {
+        $('#extra').addClass('hide');
+        $('#more2').addClass('hide');
+        $('#more').removeClass('hide');
+    }
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
 </body>
+
 </html>
